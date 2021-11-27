@@ -1,0 +1,75 @@
+.searchBar {
+  background-color: #fff;
+  padding: 0.5rem;
+  border: 1px solid #d3d3d3;
+  border-radius: 7px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+}
+
+.searchBar-group {
+  position: relative;
+}
+
+.searchBar-group + .searchBar-group::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.3rem;
+  height: 100%;
+  width: 1px;
+  background-color: #d3d3d3;
+}
+
+.location-icon,
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 1;
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+}
+
+.location-icon {
+  color: #ff7e8b;
+}
+
+.search-icon {
+  color: #898989;
+  font-weight: 300;
+}
+
+.location-select,
+.search-input {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 0.3rem 0;
+  color: #9c9c9c;
+  font-size: 0.9rem;
+}
+
+.location-select {
+  padding-left: 12px;
+}
+
+.dropdown-arrow {
+  font-size: 16px;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.search-input {
+  padding-left: 16px;
+}

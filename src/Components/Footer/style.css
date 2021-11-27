@@ -1,0 +1,36 @@
+.footer {
+  background-color: #f8f8f8;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.location-language {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-body {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 2rem; */
+  margin-bottom: 2rem;
+}
+
+.links-container {
+  max-width: 25%;
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border-top: 1px solid #cfcfcf;
+  padding: 1rem 0 2rem;
+  color: #4f4f4f;
+}

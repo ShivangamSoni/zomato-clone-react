@@ -1,0 +1,22 @@
+.footerLinks + .footerLinks {
+  margin-top: 1rem;
+}
+
+.footerLinks-title {
+  margin: 0 0 12px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.footerLink {
+  display: block;
+  width: fit-content;
+  margin-bottom: 6px;
+  text-decoration: none;
+  color: #696969;
+  transition: color 300ms linear;
+}
+
+.footerLink:hover {
+  color: #1c1c1c;
+}

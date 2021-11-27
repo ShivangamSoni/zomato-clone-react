@@ -1,0 +1,22 @@
+.exploreOptions {
+  padding: 4rem 0;
+  background-color: #fcfcfc;
+}
+
+.explore-title {
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+}
+
+.explore-subheading {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.explore-section-wrapper {
+  margin-bottom: 4rem;
+}
+
+.explore-section-wrapper:nth-last-child(1) {
+  margin-bottom: 0;
+}

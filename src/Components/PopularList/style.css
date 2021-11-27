@@ -1,0 +1,29 @@
+.popular-links {
+  text-decoration: none;
+  color: #828282;
+  font-size: 0.9rem;
+  transition: color 200ms linear;
+  display: inline-block;
+  margin: 0.2em 0;
+}
+
+.popular-links:hover {
+  color: #363636;
+}
+
+.popular-links + .popular-links {
+  margin-left: 1em;
+  position: relative;
+}
+
+.popular-links + .popular-links::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.5em;
+  transform: translate(0, -50%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #828282;
+}

@@ -1,0 +1,20 @@
+.explore-list-links {
+  display: inline-block;
+  width: 20%;
+  text-decoration: none;
+  color: #828282;
+  font-size: 0.9rem;
+  transition: color 200ms linear;
+  margin: 0.5em 0;
+}
+
+.explore-list-links:hover {
+  color: #363636;
+}
+
+.explore-list-links.more {
+  display: inline;
+  border-bottom: 1.5px solid #1c1c1c;
+  color: #1c1c1c;
+  font-weight: 700;
+}
