@@ -14,6 +14,14 @@
   transition: color 250ms linear;
 }
 
+.link.home {
+  color: #fff;
+}
+
 .link:hover {
   color: #777;
+}
+
+.link.home:hover {
+  color: #fff;
 }

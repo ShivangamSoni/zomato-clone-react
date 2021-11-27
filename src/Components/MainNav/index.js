@@ -29,7 +29,7 @@ const MainNav = () => {
           (link) =>
             link.visible && (
               <li key={link.label}>
-                <NavLink className="link" to={link.path}>
+                <NavLink className={`link ${pathname === "/" ? "home" : null}`} to={link.path}>
                   {link.label}
                 </NavLink>
               </li>

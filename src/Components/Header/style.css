@@ -5,18 +5,13 @@
   padding: 0.5rem 0 0;
 }
 
-.logo {
-  height: 50px;
-  max-width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo img {
-  max-width: 100%;
-}
-
 .header .searchBar {
   width: 50%;
+}
+
+.getApp {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
 }

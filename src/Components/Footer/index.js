@@ -1,5 +1,6 @@
 import AppLinks from "../AppLinks";
 import FooterLinks from "../FooterLinks";
+import Logo from "../Logo";
 import SocialLinks from "../SocialLinks";
 import "./style.css";
 
@@ -55,9 +56,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="set-width">
         <div className="footer-top">
-          <div className="logo">
-            <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="Zomato" />
-          </div>
+          <Logo />
 
           <div className="location-language">
             <div>Location</div>
