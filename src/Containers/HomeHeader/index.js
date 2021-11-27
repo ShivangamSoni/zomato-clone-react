@@ -1,12 +1,9 @@
 import "./style.css";
 import SearchBar from "../../Components/SearchBar";
-import Header from "../../Components/Header";
 
 const HomeHeader = () => {
   return (
     <div className="homeHeader">
-      <Header />
-
       <div className="imageWrapper">
         <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png" alt="" />
       </div>

@@ -15,3 +15,30 @@
   color: #fff;
   font-weight: 700;
 }
+
+.header.homeHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header.getAppHeader {
+  position: relative;
+}
+
+.header.getAppHeader::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 1px;
+  background-color: #eaeaea;
+}
+
+.header.getAppHeader {
+  justify-content: flex-end;
+}

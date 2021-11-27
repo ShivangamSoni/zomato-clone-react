@@ -1,0 +1,62 @@
+.getAppComp {
+  background-color: #fffbf7;
+}
+
+.getAppComp.page {
+  background-color: #fff;
+}
+
+.getApp-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 5rem 0;
+}
+
+.getApp-demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+}
+
+.getApp-demo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.getApp-content {
+  padding: 2rem 0;
+}
+
+.getApp-content h2 {
+  font-size: 30px;
+  margin: 0 0 15px;
+  line-height: 1.2;
+}
+
+.getApp-content p {
+  line-height: 1.2;
+}
+
+.getApp-content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.inputGroup {
+  display: grid;
+  grid-template-columns: 69% 29%;
+  gap: 2%;
+}
+
+.getApp-Links p {
+  font-size: 14px;
+  color: #9c9c9c;
+  margin: 0 0 15px;
+  line-height: 1.5;
+}

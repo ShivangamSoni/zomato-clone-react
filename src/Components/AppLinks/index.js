@@ -1,8 +1,8 @@
 import "./style.css";
 
-const AppLinks = () => {
+const AppLinks = ({ row }) => {
   return (
-    <div className="appLinks">
+    <div className={`appLinks ${row ? "row" : null}`}>
       <a href="https://apps.apple.com/in/app/zomato-food-restaurant-finder/id434613896" target="_blank" rel="noreferrer">
         <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="Apple Store Zomato App Download Link" />
       </a>

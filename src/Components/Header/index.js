@@ -1,5 +1,5 @@
 import "./style.css";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import MainNav from "../MainNav";
 import SearchBar from "../SearchBar";
 import Logo from "../Logo";
@@ -8,16 +8,16 @@ const Header = () => {
   const { pathname } = useLocation();
 
   return (
-    <header className="header set-width">
+    <header className={`header set-width ${pathname === "/" ? "homeHeader" : ""} ${pathname === "/mobile" ? "getAppHeader" : ""}`}>
       {pathname !== "/" ? (
         <>
-          <Logo />
-          <SearchBar />
+          <Logo center={pathname === "/mobile"} />
+          {pathname !== "/mobile" ? <SearchBar /> : null}
         </>
       ) : (
-        <a className="getApp" href="https://www.zomato.com/mobile" target="_blank" rel="noreferrer">
+        <Link className="getApp" to="/mobile">
           Get the App
-        </a>
+        </Link>
       )}
 
       <MainNav />
