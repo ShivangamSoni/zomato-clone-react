@@ -63,7 +63,7 @@ const GetApp = ({ page }) => {
                 { label: "Email", value: "email" },
                 { label: "Phone", value: "phone" },
               ]}
-              onClick={handleRadioChange}
+              onChange={handleRadioChange}
             />
 
             <div className="inputGroup">

@@ -1,0 +1,11 @@
+.filterItem {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #9c9c9c;
+  outline: 1px solid #808080;
+  border-radius: 8px;
+}

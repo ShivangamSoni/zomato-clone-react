@@ -1,0 +1,49 @@
+.orderOptionTab {
+  background-color: #fff;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  /* position: sticky;
+  top: 0;
+  z-index: 1; */
+}
+
+.optionsWrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
+.tabItem {
+  cursor: pointer;
+  padding: 12px 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.activeTab {
+  border-bottom: 2px solid #ef4f5f;
+}
+
+.tabImage {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabImage img {
+  width: 50%;
+}
+
+.tabTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #696969;
+}
+
+.activeTab .tabTitle {
+  color: #ef4f5f;
+}

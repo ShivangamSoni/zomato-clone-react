@@ -1,0 +1,26 @@
+.card {
+  cursor: pointer;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  height: 190px;
+  width: 260px;
+  overflow: hidden;
+  box-shadow: rgb(0, 0, 0, 8%) 0 3px 12px;
+  border-radius: 8px;
+}
+
+.imageWrapper img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.contentTitle {
+  font-size: 20px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

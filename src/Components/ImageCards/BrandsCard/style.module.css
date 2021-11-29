@@ -1,0 +1,33 @@
+.card {
+  cursor: pointer;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  box-shadow: rgb(0, 0, 0, 8%) 0 3px 12px;
+  border: 0.5px solid #e8e8e8;
+  background-color: #fff;
+  border-radius: 10%;
+}
+
+.imageWrapper img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.cardContent {
+  width: 150px;
+}
+
+.contentTitle {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px 0;
+  color: #1c1c1c;
+}
