@@ -1,5 +1,8 @@
-.carouselContainer {
+.home-carouselContainer {
   background-color: #fff;
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 0;
+}
+
+.home-carouselContainer + .home-carouselContainer {
   margin-bottom: 60px;
 }

@@ -1,12 +1,16 @@
+import "./style.css";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NextArrow from "../../Components/CarouselArrows/NextArrow";
 import PrevArrow from "../../Components/CarouselArrows/PrevArrow";
+
 import DeliveryCard from "../../Components/ImageCards/DeliveryCard";
-import "./style.css";
 import BrandsCard from "../../Components/ImageCards/BrandsCard";
 import NavOptionCard from "../../Components/ImageCards/NavOptionCard";
+import CollectionCard from "../../Components/ImageCards/CollectionCard";
+
 import { Link } from "react-router-dom";
 
 const Carousel = ({ title, items, slidesToShow, cardType, description }) => {
@@ -26,8 +30,10 @@ const Carousel = ({ title, items, slidesToShow, cardType, description }) => {
       <h2 className="carouselTitle">{title}</h2>
       {description && (
         <div className="carouselDesc">
-          <p>{description.content}</p>
-          <Link to={description.to}>{description.link}</Link>
+          <h6>{description.content}</h6>
+          <Link to={description.to}>
+            {description.link} <i className="fas fa-caret-right"></i>
+          </Link>
         </div>
       )}
 
@@ -48,6 +54,8 @@ const getCard = (type) => {
       return BrandsCard;
     case "nav-option":
       return NavOptionCard;
+    case "collection":
+      return CollectionCard;
     default:
       return DeliveryCard;
   }

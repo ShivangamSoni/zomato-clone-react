@@ -1,17 +1,25 @@
-// import style from "./style.module.css";
-
-const ImageCard = ({ data, onClick, descVisible = true, passedStyle }) => {
-  const style = passedStyle || require("./style.module.css");
+const ImageCard = ({ data, onClick, descVisible = true, product = false, passedStyle }) => {
+  const style = passedStyle;
 
   return (
     <div className={style.card} onClick={onClick}>
       <div className={style.imageWrapper}>
-        <img src={data.image} alt="" />
+        <img src={data.image} alt={data.title} />
       </div>
 
       <div className={style.cardContent}>
-        <h3 className={style.contentTitle}>{data.title}</h3>
-        {descVisible && <p className={style.contentDesc}>Desc</p>}
+        <div>
+          <h3 className={style.contentTitle}>{data.title}</h3>
+          {product && (
+            <span className={style.rating}>
+              {data.rating} <i className="fas fa-star"></i>
+            </span>
+          )}
+        </div>
+        <div>
+          {descVisible && <p className={style.contentDesc}>{data.desc}</p>}
+          {product && <span className={style.price}>₹{data.price} for one</span>}
+        </div>
       </div>
     </div>
   );

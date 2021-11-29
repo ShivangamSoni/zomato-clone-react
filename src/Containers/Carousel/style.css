@@ -8,3 +8,25 @@
 .slick-prev::before {
   color: #808080;
 }
+
+.carouselDesc {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carouselDesc h6 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #363636;
+  margin: 0;
+}
+
+.carouselDesc a {
+  color: #ff7e8b;
+  font-weight: 300;
+  text-decoration: none;
+}
